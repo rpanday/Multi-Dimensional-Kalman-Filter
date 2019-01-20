@@ -88,7 +88,7 @@ void filter(VectorXd &x, MatrixXd &P) {
     P = (I - K*H)*P;
 		
     // KF Prediction step
-	x = F*x + u;
+	  x = F*x + u;
     P = F*P*F.transpose() + Q;
     
     cout << "x=" << endl <<  x << endl;
